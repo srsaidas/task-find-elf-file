@@ -6,7 +6,7 @@ then
 		exit 0
 fi
 
-for i in $(ls -S ${1})
+for i in $(ls -Sr ${1})
 do
 		grep -q -b -r -i elf ${1}/$i
 		if [ $? -eq 0 ]
